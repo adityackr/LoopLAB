@@ -97,9 +97,10 @@
                 <div class="card-body">
                   <h3>Sign up today</h3>
                   <p>Please fill out this form to register</p>
-                  <form>
+                  <form name="contact" method="POST" data-netlify="true">
                     <div class="form-group">
                       <input
+                        name="name"
                         type="text"
                         class="form-control form-control-lg"
                         placeholder="Username"
@@ -107,6 +108,7 @@
                     </div>
                     <div class="form-group">
                       <input
+                        name="email"
                         type="email"
                         class="form-control form-control-lg"
                         placeholder="Email"
@@ -114,6 +116,7 @@
                     </div>
                     <div class="form-group">
                       <input
+                        name="password"
                         type="password"
                         class="form-control form-control-lg"
                         placeholder="Password"
@@ -121,6 +124,7 @@
                     </div>
                     <div class="form-group">
                       <input
+                        name="confirm password"
                         type="password"
                         class="form-control form-control-lg"
                         placeholder="Confirm Password"
@@ -362,18 +366,18 @@
             </button>
           </div>
           <div class="modal-body">
-            <form>
+            <form name="contact" method="POST" data-netlify="true">
               <div class="form-group">
                 <label for="name">Name</label>
-                <input type="text" class="form-control" />
+                <input name="name" type="text" class="form-control" />
               </div>
               <div class="form-group">
                 <label for="email">Email</label>
-                <input type="email" class="form-control" />
+                <input name="email" type="email" class="form-control" />
               </div>
               <div class="form-group">
                 <label for="message">Message</label>
-                <textarea class="form-control"></textarea>
+                <textarea name="message" class="form-control"></textarea>
               </div>
             </form>
           </div>
